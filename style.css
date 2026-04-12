@@ -55,17 +55,30 @@ footer {
 	le tue regole, se necessario. */
 }
 
+.text {
+	flex-direction: column;
+	justify-content: flex-end;
+	display: flex;
+}
+
+.text :first-child {
+	margin-bottom: 5px;
+}
+
+.text :last-child {
+	margin-right: 70px;
+	margin-bottom: 0;
+}
 
 .black-bar {
+	height: 70px;
+	background-color: black;
+	padding: auto;
 	align-items: center;
 	justify-content: space-between;
 	display: flex;
 	flex-direction: row;
 }
-
-
-
-
 
 /* Sidebar */
 .sidebar {
@@ -73,6 +86,10 @@ footer {
 	position: absolute;
 	right: 0;
 	top: 40%;
+	align-items: stretch;
+	justify-content: space-between;
+	display: flex;
+	flex-direction: column;
 
 	/* Inserisci qui sotto 
 	le tue regole, se necessario. */
