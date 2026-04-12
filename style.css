@@ -18,7 +18,8 @@ video {
 }
 
 .reel-page {
-	height: 100vh; /* ti incuriosisce? */
+	height: 100vh;
+	/* ti incuriosisce? */
 	max-width: 512px;
 	min-width: 400px;
 	position: relative;
@@ -31,9 +32,15 @@ video {
 	top: 0;
 	left: 0;
 	right: 0;
-
+	display: flex;
+	flex-direction: row;
+	color: #fff;
 	/* Inserisci qui sotto 
 	le tue regole, se necessario. */
+}
+
+.reel {
+	color: #fff;
 }
 
 /* Footer */
@@ -44,10 +51,21 @@ footer {
 	right: 0;
 	bottom: 0;
 	color: #fff;
-
 	/* Inserisci qui sotto 
 	le tue regole, se necessario. */
 }
+
+
+.black-bar {
+	align-items: center;
+	justify-content: space-between;
+	display: flex;
+	flex-direction: row;
+}
+
+
+
+
 
 /* Sidebar */
 .sidebar {
@@ -58,6 +76,10 @@ footer {
 
 	/* Inserisci qui sotto 
 	le tue regole, se necessario. */
+}
+
+.sidebar img {
+	height: 45px;
 }
 
 /* ---------------------
