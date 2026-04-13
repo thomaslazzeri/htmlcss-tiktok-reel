@@ -19,13 +19,15 @@ video {
 
 .reel-page {
 	height: 100vh;
-	/* ti incuriosisce? */
 	max-width: 512px;
 	min-width: 400px;
 	position: relative;
 }
 
+/* Header */
 .reel-header {
+	padding-right: 10px;
+	padding-left: 10px;
 	position: absolute;
 	align-items: center;
 	justify-content: space-between;
@@ -33,26 +35,34 @@ video {
 	left: 0;
 	right: 0;
 	display: flex;
-	flex-direction: row;
 	color: #fff;
-	/* Inserisci qui sotto 
-	le tue regole, se necessario. */
+}
+
+.reel-header svg {
+	height: 30px;
+	width: 25px;
 }
 
 .reel {
 	color: #fff;
 }
 
-/* Footer */
+.explore {
+	display: flex;
+	align-items: center;
+}
 
+.explore div {
+	margin-right: 16px;
+}
+
+/* Footer */
 footer {
 	position: absolute;
 	left: 0;
 	right: 0;
 	bottom: 0;
 	color: #fff;
-	/* Inserisci qui sotto 
-	le tue regole, se necessario. */
 }
 
 .text {
@@ -70,16 +80,6 @@ footer {
 	margin-bottom: 0;
 }
 
-.black-bar {
-	height: 70px;
-	background-color: black;
-	padding: auto;
-	align-items: center;
-	justify-content: space-between;
-	display: flex;
-	flex-direction: row;
-}
-
 /* Sidebar */
 .sidebar {
 	padding: 0 16px;
@@ -88,15 +88,46 @@ footer {
 	top: 40%;
 	align-items: stretch;
 	justify-content: space-between;
-	display: flex;
-	flex-direction: column;
-
-	/* Inserisci qui sotto 
-	le tue regole, se necessario. */
 }
 
 .sidebar img {
 	height: 45px;
+}
+
+.sidebar svg {
+	color: #fff;
+	height: 70px;
+	width: 20px;
+}
+
+.boolean {
+	position: relative;
+}
+
+.boolean svg {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 20px;
+	translate: 65% 45%;
+}
+
+.black-bar {
+	padding-right: 10px;
+	padding-left: 10px;
+	height: 70px;
+	color: #fff;
+	background-color: black;
+	padding: auto;
+	align-items: center;
+	justify-content: space-between;
+	display: flex;
+	flex-direction: row;
+}
+
+.black-bar svg {
+	height: 30px;
+	width: 25px;
 }
 
 /* ---------------------
