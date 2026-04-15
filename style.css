@@ -7,6 +7,7 @@
 body {
 	margin: 0 auto;
 	font-family: 'TikTok Sans', sans-serif;
+	color: #fff;
 }
 
 video {
@@ -26,8 +27,8 @@ video {
 
 /* Header */
 .reel-header {
-	padding-right: 10px;
-	padding-left: 10px;
+	margin-top: 10px;
+	padding: 24px;
 	position: absolute;
 	align-items: center;
 	justify-content: space-between;
@@ -56,6 +57,32 @@ video {
 	margin-right: 16px;
 }
 
+.explore .new {
+	position: relative;
+}
+
+.explore .new::after {
+	position: absolute;
+	top: -8px;
+	right: -8px;
+	content: '';
+	display: block;
+	height: 8px;
+	width: 8px;
+	border-radius: 50%;
+	background-color: #f28380;
+}
+
+.explore .current::after {
+	content: '';
+	display: block;
+	height: 3px;
+	width: 60%;
+	margin: auto;
+	margin-top: 4px;
+	background-color: #fff;
+}
+
 /* Footer */
 footer {
 	position: absolute;
@@ -82,36 +109,56 @@ footer {
 
 /* Sidebar */
 .sidebar {
+	display: block;
+	margin: 0 auto;
 	padding: 0 16px;
 	position: absolute;
 	right: 0;
 	top: 40%;
-	align-items: stretch;
-	justify-content: space-between;
+	z-index: 1;
+}
+.sidebar .boolean {
+position: relative;
 }
 
-.sidebar img {
-	height: 45px;
+.sidebar .boolean img {
+	width: 50px;
+	border-radius: 50%;
+}
+
+.sidebar .boolean .plus {
+	position: absolute;
+	bottom: -10px;
+	left: 50%;
+	z-index: 1;
+	translate: -50% -50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 15px;
+	height: 15px;
+	background-color: #f9314f;
+	border-radius: 50%;
 }
 
 .sidebar svg {
-	color: #fff;
-	height: 70px;
-	width: 20px;
+	display: block;
+	margin: 0 auto;
+	width: 40px;
+	height: 25px;
 }
 
-.boolean {
-	position: relative;
+.sidebar .icons {
+	margin-top: 40px;
 }
 
-.boolean svg {
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	width: 20px;
-	translate: 65% 45%;
+.sidebar .number {
+	display: block;
+	text-align: center;
+	margin-top: 4px;
 }
 
+/* Black Bar */
 .black-bar {
 	padding-right: 10px;
 	padding-left: 10px;
@@ -130,24 +177,6 @@ footer {
 	width: 25px;
 }
 
-/* ---------------------
-Regole per evidenziare i blocchi 
-da rimuovere una volta concluso
---------------------- */
-.debug footer {
-	min-height: 100px;
-	border: 2px dashed #fff;
+.black-bar .word {
+	font-size: 14px;
 }
-
-.debug .sidebar {
-	min-width: 80px;
-	min-height: 450px;
-	border: 2px dashed #ff0;
-}
-
-.debug .reel-header {
-	min-height: 50px;
-	border: 2px dashed #fff;
-}
-
-/* --------------------- */
