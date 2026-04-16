@@ -3,7 +3,7 @@
 	padding: 0;
 	box-sizing: border-box;
 }
-
+/* body */
 body {
 	margin: 0 auto;
 	font-family: 'TikTok Sans', sans-serif;
@@ -25,7 +25,7 @@ video {
 	position: relative;
 }
 
-/* Header */
+/* header */
 .reel-header {
 	margin-top: 4px;
 	padding: 20px;
@@ -83,7 +83,7 @@ video {
 	background-color: #fff;
 }
 
-/* Footer */
+/* footer */
 footer {
 	position: absolute;
 	left: 0;
@@ -107,7 +107,7 @@ footer {
 	margin-bottom: 0;
 }
 
-/* Sidebar */
+/* sidebar */
 .sidebar {
 	display: block;
 	margin: 0 auto;
@@ -160,7 +160,7 @@ footer {
 	font-size: 12px;
 }
 
-/* Black Bar */
+/* black bar */
 .black-bar {
 	padding-right: 10px;
 	padding-left: 10px;
