@@ -1,1 +1,1 @@
-Creazione di un reel di TikTok, con tutti i vari dati tra cui icone, immagini, video e parole.
+Creazione di un reel di TikTok di una pagina Boolean, con tutti i vari dati tra cui icone, immagini, video e parole.
