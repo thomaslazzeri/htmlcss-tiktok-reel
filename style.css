@@ -124,6 +124,7 @@ footer {
 
 .sidebar .boolean img {
 	width: 50px;
+	border: solid 2px #fff;
 	border-radius: 50%;
 }
 
