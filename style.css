@@ -27,8 +27,8 @@ video {
 
 /* Header */
 .reel-header {
-	margin-top: 10px;
-	padding: 24px;
+	margin-top: 4px;
+	padding: 20px;
 	position: absolute;
 	align-items: center;
 	justify-content: space-between;
@@ -70,7 +70,7 @@ video {
 	height: 8px;
 	width: 8px;
 	border-radius: 50%;
-	background-color: #f28380;
+	background-color: #652e61;
 }
 
 .explore .current::after {
@@ -117,8 +117,9 @@ footer {
 	top: 40%;
 	z-index: 1;
 }
+
 .sidebar .boolean {
-position: relative;
+	position: relative;
 }
 
 .sidebar .boolean img {
@@ -156,6 +157,7 @@ position: relative;
 	display: block;
 	text-align: center;
 	margin-top: 4px;
+	font-size: 12px;
 }
 
 /* Black Bar */
@@ -170,13 +172,46 @@ position: relative;
 	justify-content: space-between;
 	display: flex;
 	flex-direction: row;
+	flex: 1 0 0;
 }
 
 .black-bar svg {
+	display: block;
+	margin: 0 auto;
 	height: 30px;
+	width: 25px;
+}
+
+.black-bar .import {
+	padding: 5px 20px;
+	color: black;
+	background-color: #fff;
+	border-radius: 10px;
+	box-shadow: -4px 0 cyan, 4px 0 fuchsia;
+}
+
+.black-bar svg:nth-child(4) {
+	position: relative;
+	height: 25px;
 	width: 25px;
 }
 
 .black-bar .word {
 	font-size: 14px;
+}
+
+.black-bar .messages-number {
+	position: absolute;
+	bottom: -75px;
+	left: 70%;
+	z-index: 1;
+	padding: 2px 6px;
+	border-radius: 10px;
+	background-color: #f9314f;
+	color: #fff;
+	font-size: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	translate: -15% -280%;
 }
